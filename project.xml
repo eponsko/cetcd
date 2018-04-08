@@ -37,9 +37,9 @@ Then to regenrate config based on project.xml changes (or api changes..)
              patch = "5"/>
     <include filename = "license.xml" />
 
-    <class name ="cetcd" state = "stable" />
-    <class name ="cetcd_array" state = "stable" />
-    <class name ="sds" state = "stable" />
+    <class name ="cetcd" state = "stable" selftest = "0"/>
+    <class name ="cetcd_array" state = "stable" selftest = "0" />
+    <class name ="sds" state = "stable" selftest = "0"/>
 
     <use project = "libcurl"
          repository = "https://github.com/curl/curl.git"

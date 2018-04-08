@@ -226,5 +226,12 @@
 
 
 //  *** To avoid double-definitions, only define if building without draft ***
+#ifndef CETCD_BUILD_DRAFT_API
+
+//  Self test for private classes
+CETCD_PRIVATE void
+    cetcd_private_selftest (bool verbose, const char *subtest);
+
+#endif // CETCD_BUILD_DRAFT_API
 
 #endif
