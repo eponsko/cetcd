@@ -1,0 +1,61 @@
+<!--
+Used by zproject for:
+ - generating files for cmake, automake, etc.
+ - generating headers and source skeletons for classes defined in the api/ directory
+ - generating headers for version, etc.
+ - inserting license in files
+ - and more?
+
+To use, you need the GSL code generator
+  git clone https://github.com/imatix/gsl.git
+  cd gsl/src
+  make
+  make install
+
+And the zproject specific specifications
+  git clone https://github.com/zeromq/zproject.git
+  cd zproject
+  ./autogen.sh
+  ./configure
+  make
+  make install
+
+Then to regenrate config based on project.xml changes (or api changes..)
+  gsl project.xml
+
+-->
+
+<project
+        script = "zproject.gsl"
+        name = "cetcd"
+        description = "Cetcd is a C client for etcd"
+        prefix = "cetcd"
+        email = "pontus.skoldstrom@ri.se">
+
+    <version major = "0"
+             minor = "0"
+             patch = "5"/>
+    <include filename = "license.xml" />
+
+    <class name ="cetcd" state = "stable" />
+    <class name ="cetcd_array" state = "stable" />
+    <class name ="sds" state = "stable" />
+
+    <use project = "libcurl"
+         repository = "https://github.com/curl/curl.git"
+         test = "curl_easy_init"
+         header = "curl/curl.h"
+    />
+
+        <use project = "yajl"
+         libname = "libyajl"
+         prefix = "yajl"
+         header = "yajl/yajl_common.h"
+         test = "yajl_free"
+    />
+
+
+    <target name = "cmake" /> 
+    <target name = "autotools" />
+    <target name = "debian" />
+</project>
