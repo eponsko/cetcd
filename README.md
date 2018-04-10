@@ -24,7 +24,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Status
- This is a repacked version of cetcd (original [here][https://github.com/shafreeck/cetcd]), using zproject to generate 
+ This is a repacked version of cetcd (original [here](https://github.com/shafreeck/cetcd)), using zproject to generate 
  automake/cmake build scripts and debian packaging scripts.
 	
  cetcd is on active development. It aims to be used in production environment and to supply full features of etcd.
