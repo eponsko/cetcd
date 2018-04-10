@@ -1,9 +1,6 @@
 # Cetcd is a C client for etcd
 
 [![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)](LICENSE)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/shafreeck/cetcd?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Stories in Ready](https://badge.waffle.io/shafreeck/cetcd.png?label=ready&title=Ready)](https://waffle.io/shafreeck/cetcd)
-[![wercker status](https://app.wercker.com/status/cc417f5b6e093b4d0b962580a3d022cb/s/master "wercker status")](https://app.wercker.com/project/bykey/cc417f5b6e093b4d0b962580a3d022cb)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -27,6 +24,9 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Status
+ This is a repacked version of cetcd (original [here][https://github.com/shafreeck/cetcd]), using zproject to generate 
+ automake/cmake build scripts and debian packaging scripts.
+	
  cetcd is on active development. It aims to be used in production environment and to supply full features of etcd.
  **Any issues or pull requests are welcome!**
 
